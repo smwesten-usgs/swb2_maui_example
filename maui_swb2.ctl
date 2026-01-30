@@ -87,8 +87,8 @@ TMIN_MISSING_VALUES_ACTION       mean
 
 INITIAL_CONTINUOUS_FROZEN_GROUND_INDEX CONSTANT 0.0
 
-UPPER_LIMIT_CFGI 83.
-LOWER_LIMIT_CFGI 55.
+CFGI_UPPER_LIMIT CONSTANT 83.
+CFGI_LOWER_LIMIT CONSTANT 55.
 
 
 (6) "standard" GIS input grids: hydrologic soils group, available water capacity, soils, and flow direction
@@ -186,6 +186,13 @@ OUTPUT ENABLE direct_soil_moisture
 
 LAND_USE_LOOKUP_TABLE std_input/Landuse_lookup_maui.txt
 
+# detailed outputs at cells of interest...
+
+DUMP_VARIABLES COL_ROW  125  198
+DUMP_VARIABLES COL_ROW  116  199
+DUMP_VARIABLES COL_ROW  21    28
+DUMP_VARIABLES COL_ROW  179   48
+DUMP_VARIABLES COL_ROW  139  208
 
 (12) Start and end date for simulation
 --------------------------------------

@@ -9,12 +9,15 @@
 
 !                   Lower LH Corner              Grid
 !                 |_________________________|    Cell
-!       NX     NY       X0       Y0              Size
+!       NX     NY       X0        Y0              Size
+GRID  2646   1756   739500.  2276900.              30.
+
+
 ! "hi-res" version
 #GRID  1582   1054  739800.    2276900.            50.
 
 ! "lo-res" version
-GRID   316    210    739800.    2276900.           250.
+#GRID   316    210    739800.    2276900.           250.
 BASE_PROJECTION_DEFINITION +proj=utm +zone=4 +ellps=WGS84 +datum=WGS84 +units=m +no_defs
 
 (1) MODULE SPECIFICATION
